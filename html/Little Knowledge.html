@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小知识</title>
+<style type="text/css">
+	body{
+		background-image: url(../image/timg16.jpg);
+		background-size: 100% ;
+	}
+#dh0{
+		text-decoration: none;
+		float: right;
+		font-family: "微软雅黑";
+		text-align: center;
+		font-size: 80px;
+		color: #8100FF;
+		font-weight: bold;
+		position: absolute;
+	}
+.container{
+    margin: 145px 155px 0px 165px;
+}
+.ul1{
+    border: 1px double #2d2d30;
+    box-shadow: #737373 8px 8px 5px;
+    overflow:auto;
+}
+.ul1 {
+	margin: 10px 0px 140px 0px;
+    font-size: 18px;
+}
+#a{
+	position: absolute;
+	left: 50px;
+	top: 100px;
+}
+</style>
+</head>
+
+<body>
+<div id="dh0">
+<div id="a">你知道吗</div></div>
+        <div class="col-md-12 col-sm-12">
+             <pre class="container" id="containerHome">
+
+                <ul class="ul1">
+                    <li id="li1">
+1.在布局前，要对body、ul、li、td进行边距清零，
+消除自带内
+身有三个值：separate。
+类型，颜色。大小分
+型，细边框(thin)，中等边框(medium)，粗边框(thick);
+类型分为solid(实线)、
+4.：right，该元素把文本呢排列到右边，可用的值为左(left)、
+中(center)、(right)、
+justify(两端对齐)；
+5.td:hover { color:orange; cursor: pointer; }
+,该元素表示当鼠标进入
+区域时，颜色转变，及鼠标手势转变。
+6.：none，该元素表示元素生成的类型。
+取值一般为none(不显示、隐藏)、blo
+ck(鼠标进入显示)、inline(直接显示，默认)
+如果空间不够，则向下填充
+                   中(center)、(right)、
+justify(两端对齐)；
+5.td:hover { color:orange; cursor: pointer; }
+,该元素表示当鼠标进入
+区域时，颜色转变，及鼠标手势转变。
+6.：none，该元素表示元素生成的类型。
+取值一般为none(不显示、隐藏)、blo
+ck(鼠标进入显示)、inline(直接显示，默认)
+如果空间不够，则向下填充
+                    </li><br>
+                </ul>
+             </pre>
+        </div>
+<script type="text/javascript">
+var pre = document.getElementById("li1");
+var text = pre.innerText;
+var num = 0;
+function run() {
+    pre.innerText = text.slice(0,num) + (num%2==0?"":"_");
+    if (++num<=text.length)
+        setTimeout(run, 30);
+}
+run();
+</script>
+</body>
+</html>
